@@ -29,7 +29,22 @@ createTotal.addEventListener('click', function (){
         }
     }
     
-    // Stampo il totale
+    // Creo una variabile prendendomi l'input text del discount
+    var discountCodeInput = document.getElementById('discount');
+    
+    // Setto il mio codice sconto
+    var discountCode = '0000';
+
+    // Setto una percentuale 
+    var discountPerc = 50;
+    
+    // Se il codice scono nell'input è uguale al discountCode allora applico lo sconto
+    if(discountCodeInput.value === discountCode){
+        discont = total / 100 * discountPerc  ;
+        total -= discont; 
+    } 
+
+    // Stampo il prezzo
     totalOutput.innerHTML = total;
 
 })
