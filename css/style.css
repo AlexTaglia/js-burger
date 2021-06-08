@@ -7,6 +7,7 @@
 .container-fluid{
     background-color: #fff5e2;
     padding: 0; 
+    height: 100vh;
 }
 
 .container{
@@ -23,7 +24,6 @@
     background-color: #d33359;
 }
 
-
 .discount-section input#discount{
     width: 60%;
     background-color: #fff5e2;
@@ -35,9 +35,18 @@ footer{
     height: 60px;
     line-height: 60px;
     display: flex;
-    justify-content: space-between;
-    padding: 0 25px 0 25px;
     font-size: 25px;
+}
+
+.burger-name input{
+    font-size: 30px;
+    border: none;
+    outline: none;
+}
+
+
+header img{
+    width: 180px;
 }
 
 

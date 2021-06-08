@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Create Your Burger</title>
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="container">
             <div class="row">
                 <div class="col-12 bg-warning">
-                    <header>
-                        <h1>Create Your Burger</h1>
+                    <header class="position-relative" >
+                        <h1 class="mt-5 mb-3 fw-bold">Create Your Burger</h1>
+                        <img class="position-absolute top-0 start-100 translate-middle" src="./img/burger-top.png" alt="burger">
                     </header>
                 </div>
 
-                <form action="">
+                <form class="main-section" action="">
                     <div class="row bg-light">
-                        <div class="col-12">
-                            <h2>Name Your Burger</h2>
-                            <h3>Ingredients</h3>
+                        <div class="col-12 burger-name pt-5">
+                            <form action="">
+                                <input class="bg-light fw-bold" type="text" placeholder="Name Your Burger...">
+                            </form>
+
+                            <h3 class="pt-4 pb-3">Ingredients</h3>
                         </div>
 
                         <!-- ingredient -->
@@ -33,12 +40,13 @@
                                 </div>
                                 <div class="col-9">
                                     <span>Cheese</span>
-                                    <input type="checkbox" id="cheese" class="check-ingredient" name="cheese" value="10">
+                                    <input type="checkbox" id="cheese" class="check-ingredient" name="cheese"
+                                        value="10">
                                     <label class="text-danger" for="cheese">Add</label>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- ingredient -->
                         <div class="col-6 align-items-center">
                             <div class="row mb-4">
@@ -47,7 +55,8 @@
                                 </div>
                                 <div class="col-9">
                                     <span>Tomato</span>
-                                    <input type="checkbox" id="tomato" class="check-ingredient" name="tomato" value="20">
+                                    <input type="checkbox" id="tomato" class="check-ingredient" name="tomato"
+                                        value="20">
                                     <label class="text-danger" for="tomato">Add</label>
                                 </div>
                             </div>
@@ -75,7 +84,8 @@
                                 </div>
                                 <div class="col-9">
                                     <span>Lettuce</span>
-                                    <input type="checkbox" id="lettuce" class="check-ingredient" name="lettuce" value="11">
+                                    <input type="checkbox" id="lettuce" class="check-ingredient" name="lettuce"
+                                        value="11">
                                     <label class="text-danger" for="lettuce">Add</label>
                                 </div>
                             </div>
@@ -89,7 +99,8 @@
                                 </div>
                                 <div class="col-9">
                                     <span>Mustard</span>
-                                    <input type="checkbox" id="mustard" class="check-ingredient" name="mustard" value="5">
+                                    <input type="checkbox" id="mustard" class="check-ingredient" name="mustard"
+                                        value="5">
                                     <label class="text-danger" for="mustard">Add</label>
                                 </div>
                             </div>
@@ -103,7 +114,8 @@
                                 </div>
                                 <div class="col-9">
                                     <span>Ketchup</span>
-                                    <input type="checkbox" id="ketchup" class="check-ingredient" name="ketchup" value="5">
+                                    <input type="checkbox" id="ketchup" class="check-ingredient" name="ketchup"
+                                        value="5">
                                     <label class="text-danger" for="ketchup">Add</label>
                                 </div>
                             </div>
@@ -119,23 +131,25 @@
 
                     </div>
                 </form>
-                
-                <!-- Calculate button -->
-                <div class="row justify-content-center bg-light pb-5">
-                    <div class="col-1">
-                        <button class="btn btn-warning" id="calculate">calculate</button>
-                    </div>
-                </div>
-                
-                <footer class="bg-danger text-white">
-                    <div>Your price</div>
-                    <div> $ <span id="total">50.00</span></div>
-                </footer>
             </div>
+
+            <!-- Calculate button -->
+            <div class="row justify-content-center bg-light pb-5">
+                <div class="col-1">
+                    <button class="btn btn-warning" id="calculate">calculate</button>
+                </div>
+            </div>
+
+            <footer class="row bg-danger space-between text-white">
+                <div class="col-6">Your price</div>
+                <div class="col-6 text-end"> $ <span id="total">50.00</span></div>
+            </footer>
+
         </div>
 
     </div>
 
-    <script type="text/javascript" src="./js/script.js"></script>    
+    <script type="text/javascript" src="./js/script.js"></script>
 </body>
+
 </html>
