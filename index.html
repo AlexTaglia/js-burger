@@ -4,107 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Create Your Burger</title>
 </head>
 <body>
     <div class="container-fluid">
-        <div class="container-left">
-            <header>
-                <h1>Create Your Burger</h1>
-            </header>
-            <main>
-                <h2>Name Your Burger</h2>
-                <h3>Ingredients</h3>
-               
-                <form class="ingredients" action="">
-                        <div class="item">
-                            <div class="img">
-                                <img src="./img/cheese.svg" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 bg-warning">
+                    <header>
+                        <h1>Create Your Burger</h1>
+                    </header>
+                </div>
+
+                <form action="">
+                    <div class="row bg-light">
+                        <div class="col-12">
+                            <h2>Name Your Burger</h2>
+                            <h3>Ingredients</h3>
+                        </div>
+
+                        <!-- ingredient -->
+                        <div class="col-6">
+                            <div class="row mb-4">
+                                <div class="col-3">
+                                    <img src="./img/cheese.svg" alt="cheese">
+                                </div>
+                                <div class="col-9">
+                                    <span>Cheese</span>
+                                    <input type="checkbox" id="cheese" class="check-ingredient" name="cheese" value="10">
+                                    <label class="text-danger" for="cheese">Add</label>
+                                </div>
                             </div>
-                            <div class="description">
-                                <span>Cheese</span>
-                                <input type="checkbox" id="cheese" class="check-ingredient" name="cheese" value="10">
-                                <label for="cheese">Add</label>
+                        </div>
+                        
+                        <!-- ingredient -->
+                        <div class="col-6 align-items-center">
+                            <div class="row mb-4">
+                                <div class="col-3">
+                                    <img src="./img/tomato.svg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <span>Tomato</span>
+                                    <input type="checkbox" id="tomato" class="check-ingredient" name="tomato" value="20">
+                                    <label class="text-danger" for="tomato">Add</label>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="item">
-                            <div class="img">
-                                <img src="./img/fried-egg.svg" alt="">
-                            </div>
-                            <div class="description">
-                                <span>Egg</span>
-                                <input type="checkbox" id="egg" class="check-ingredient" name="egg" value="15">
-                                <label for="egg">Add</label>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="img">
-                                <img src="./img/mustard.svg" alt="">
-                            </div>
-                            <div class="description">
-                                <span>Mustard</span>
-                                <input type="checkbox" id="mustard" class="check-ingredient" name="mustard" value="5">
-                                <label for="mustard">Add</label>
+                        <!-- ingredient -->
+                        <div class="col-6 align-items-center">
+                            <div class="row mb-4">
+                                <div class="col-3">
+                                    <img src="./img/fried-egg.svg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <span>Egg</span>
+                                    <input type="checkbox" id="egg" class="check-ingredient" name="egg" value="15">
+                                    <label class="text-danger" for="egg">Add</label>
+                                </div>
                             </div>
                         </div>
 
-
-                        <div class="item">
-                            <div class="img">
-                                <img src="./img/tomato.svg" alt="">
-                            </div>
-                            <div class="description">
-                                <span>Tomato</span>
-                                <input type="checkbox" id="tomato" class="check-ingredient" name="tomato" value="20">
-                                <label for="tomato">Add</label>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="img">
-                                <img src="./img/lettuce.svg" alt="">
-                            </div>
-                            <div class="description">
-                                <span>Lettuce</span>
-                                <input type="checkbox" id="lettuce" class="check-ingredient" name="lettuce" value="11">
-                                <label for="lettuce">Add</label>
+                        <!-- ingredient -->
+                        <div class="col-6 align-items-center">
+                            <div class="row mb-4">
+                                <div class="col-3">
+                                    <img src="./img/lettuce.svg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <span>Lettuce</span>
+                                    <input type="checkbox" id="lettuce" class="check-ingredient" name="lettuce" value="11">
+                                    <label class="text-danger" for="lettuce">Add</label>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="item">
-                            <div class="img">
-                                <img src="./img/ketchup.svg" alt="">
-                            </div>
-                            <div class="description">
-                                <span>Ketchup</span>
-                                <input type="checkbox" id="ketchup" class="check-ingredient" name="ketchup" value="5">
-                                <label for="ketchup">Add</label>
+                        <!-- ingredient -->
+                        <div class="col-6 align-items-center">
+                            <div class="row mb-4">
+                                <div class="col-3">
+                                    <img src="./img/mustard.svg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <span>Mustard</span>
+                                    <input type="checkbox" id="mustard" class="check-ingredient" name="mustard" value="5">
+                                    <label class="text-danger" for="mustard">Add</label>
+                                </div>
                             </div>
                         </div>
-                    
+
+                        <!-- ingredient -->
+                        <div class="col-6 align-items-center">
+                            <div class="row mb-4">
+                                <div class="col-3">
+                                    <img src="./img/ketchup.svg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <span>Ketchup</span>
+                                    <input type="checkbox" id="ketchup" class="check-ingredient" name="ketchup" value="5">
+                                    <label class="text-danger" for="ketchup">Add</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- discount -->
+                        <div class="row discount-section mt-5 mb-5">
+                            <div class="col-12">
+                                <label for="discount">Discount Coupon</label>
+                                <input type="text" id="discount" name="discount">
+                            </div>
+                        </div>
+
+                    </div>
                 </form>
-
-                <div class="box-discount">
-                    <div class="|">
-                        <label for="discount">Discount Coupon</label>
-                        <input type="text" id="discount" name="discount">
+                
+                <!-- Calculate button -->
+                <div class="row justify-content-center bg-light pb-5">
+                    <div class="col-1">
+                        <button class="btn btn-warning" id="calculate">calculate</button>
                     </div>
                 </div>
                 
-                <button id="calculate">calculate</button>
-            </main>
-
-            <footer>
-                <div>Your price</div>
-                <div> $ <span id="total">50</span></div>
-            </footer>
+                <footer class="bg-danger text-white">
+                    <div>Your price</div>
+                    <div> $ <span id="total">50.00</span></div>
+                </footer>
+            </div>
         </div>
 
     </div>
-
 
     <script type="text/javascript" src="./js/script.js"></script>    
 </body>
