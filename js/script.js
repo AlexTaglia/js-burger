@@ -42,9 +42,12 @@ createTotal.addEventListener('click', function (){
     if(discountCodeInput.value === discountCode){
         discont = total / 100 * discountPerc  ;
         total -= discont; 
-    } 
+
+    } else if (discountCodeInput.value.length > 0){
+        alert('codice sconto non valido');
+    }
 
     // Stampo il prezzo
-    totalOutput.innerHTML = total;
+    totalOutput.innerHTML = total.toFixed(2);
 
 })
