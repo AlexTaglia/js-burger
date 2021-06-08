@@ -12,6 +12,7 @@
 
 .container{
     width: 50%;
+    min-width: 420px;
     margin: 0;
 }
 
@@ -29,6 +30,18 @@
     background-color: #fff5e2;
     border: none;
     border-radius: 5px;  
+    margin-left: 20px;
+}
+
+.header-section{
+    height: 110px;
+    padding-top: 50px;
+}
+
+.description{
+    line-height: 60px;
+    font-weight: 500;
+    padding-left: 30px;
 }
 
 footer{
@@ -47,6 +60,16 @@ footer{
 
 header img{
     width: 180px;
+}
+
+img {
+ width: 60px;
+}
+
+@media (max-width: 768px){ //md
+    .container-fluid{ 
+        height: auto;
+    }
 }
 
 
